@@ -19,16 +19,26 @@
         </div>
         <div class="header__menu">
             <div tabindex="0" class="header__menu--profile">
-                <img src="images/user.png" alt="user" width="40px" />
+                <img src="/assets/user.png" alt="user" width="40px" />
                 <p>Perfil</p>
             </div>
             <nav>
+                <div style="height: 20px;"></div>
                 <ul>
+                    <li>
+                        <a href="/">Home</a>
+                    </li>
                     <li>
                         <a href="/">Cuenta</a>
                     </li>
                     <li>
-                        <a href="/">Cerrar Sesion</a>
+                        <a href="/">Nosotros</a>
+                    </li>
+                    <li>
+                        <a href="/">Contactanos</a>
+                    </li>
+                    <li style="text-align: center;">
+                        <a href="/"><img src="/assets/logout.png" alt="img_logout" width="20px" title="log-out"></a>
                     </li>
                 </ul>
             </nav>
@@ -36,12 +46,12 @@
     </header>
     <section class="main">
         <section class="search">
-            <h2 tabindex="0" class="search__title">¿Que quieres ver hoy?</h2>
-            <input class="input" type="text" placeholder="Buscar..." />
+            <img src="/assets/pexels-markus-winkler-4993646.jpg" alt="" width="300px">
+            <p>Viaja comodo y seguro con nosotros</p>
         </section>
 
-        <section class="carousel">
-            <h3 tabindex="0" class="categories">Mi lista</h3>
+        <section class="carousel" style="padding-top: 40px;">
+            <h3 tabindex="0" class="categories" style="font-weight: 600; letter-spacing: 2px;">Servicios</h3>
             <div class="carousel__container">
                 <div class="carousel-item">
                     <img class="carousel-item__img" src="https://logos-marcas.com/wp-content/uploads/2020/05/Uber-Símbolo-650x366.jpg" alt="people" />
@@ -58,16 +68,23 @@
                 <div class="carousel-item">
                     <img class="carousel-item__img" src="https://image.shutterstock.com/image-vector/taxi-logo-isolated-on-white-260nw-1745135927.jpg" alt="environment" />
                 </div>
+            </div>
+        </section>
 
+        <section class="description">
+            <br>
+            <div class="description__item">
+                <img src="/assets/shield.png" alt="security_logo" width="150px">
+                <p>-Durante cualquier situación de emergencia, <br> puedes presionar el botón de emergencia en <br> la app que te conecta con la Línea Nacional <br> de Emergencia 123. <br>-Protegemos tu número telefónico y tus datos personales.
+            </div>
+            <br><br><br><br>
+            <div class="description__item">
+                <img src="/assets/relaxing.png" alt="" width="150px">
+                <p>Nuestros usuarios se sentirán cómodos, <br>tratados con respeto, en el cual brindamos un viaje estable.<br>Todo esto lo puede hacer desde la comodidd de su hogar</p>
             </div>
         </section>
 
     </section>
-    <footer class="footer">
-        <a href="">Terminos de uso</a>
-        <a href="">Declaracion de privacidad</a>
-        <a href="">Centro de ayuda</a>
-    </footer>
     <!-- Bootstrap JavaScript Libraries -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>

@@ -19,8 +19,7 @@ body {
     margin-left: 30px;
 }
 
-.login{
-   
+.login {
     width: 100%;
     background: linear-gradient(#22577A, #38A3A5, #B8DFD8);
     display: flex;
@@ -76,8 +75,6 @@ body {
 
 .login_container--social-media>div {
     display: flex;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
     align-items: center;
     font-size: 15px;
     margin-bottom: 10px;
