@@ -1,0 +1,178 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Viaje</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS v5.0.2 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"  integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="/CSS/viaje.css">
+
+  </head>
+  <body>
+    <header class="header">
+        <div class="header__menu">
+            <div tabindex="0" class="header__menu--profile">
+                <img src="/assets/user.png" alt="user" width="40px" />
+                <p>Perfil</p>
+            </div>
+            <nav>
+                <div style="height: 20px;"></div>
+                <ul>
+                    <li>
+                        <a href="/index.html">Inicio</a>
+                    </li>
+                    <!-- <li>
+                        <a href="/">Cuenta</a>
+                    </li> -->
+                    <li>
+                        <a href="/acerca-de.html" target="_blank">Nosotros</a>
+                    </li>
+                    <li>
+                        <a href="/Contactenos.html" target="_blank">Contactanos</a>
+                    </li>
+                    <li style="text-align: center;">
+                        <a href="/iniciar_sesion.html"><img src="/assets/logout.png" alt="img_logout" width="20px" title="log-out"></a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div class="div-lateral">
+        <div class="form-container">
+              <div class="placa-container">
+                <div class="div-text">Placa</div>
+                <div class="placa" id="">
+                    <!-- <p>Aquí va la placa</p> -->
+                </div>
+              </div>
+
+              <div class="driver-container">
+                <div class="div-text">Conductor</div>
+                <div class="driver">
+                    <p>Manolito Peréz Garcia</p>
+                </div>
+              </div>
+
+              <div class="distance">
+                <div class="div-text">Distancia hasta el destino</div>
+                <div class="km">
+                    <!-- <p>100km</p> -->
+                </div>
+              </div>
+
+              <div class="date">
+                <div class="div-text">Fecha del viaje</div>
+                <div class="time-date">
+                    <!-- <p>December 17, 1995</p> -->
+                </div>
+              </div>
+              <hr>
+              <div class="contactos">
+                <div class="contacts contacts--first">
+                    <div class="div-text">Contacto de emergencia 1</div>
+                    <div class="contact-1">
+                        <p>Maria Garcia</p>
+                    </div>
+                  </div>
+    
+                  <div class="contacts">
+                    <div class="div-text">Contacto de emergencia 2</div>
+                    <div class="contact-2">
+                        <p>James Rodriguez</p>
+                    </div>
+                  </div>
+    
+                  <div class="contacts">
+                    <div class="div-text">Contacto de emergencia 3</div>
+                    <div class="contact-3">
+                        <p>Mateo </p>
+                    </div>
+                  </div>
+              </div>
+
+              <div class="contactos--numeros">
+                <div class="contacts contacts--first">
+                    <div class="div-text">Número</div>
+                    <div class="number-1">
+                        <p>3136521905</p>
+                    </div>
+                  </div>
+    
+                  <div class="contacts">
+                    <div class="div-text">Número</div>
+                    <div class="number-2">
+                        <p>3136521905</p>
+                    </div>
+                  </div>
+    
+                  <div class="contacts">
+                    <div class="div-text">Número</div>
+                    <div class="number-3">
+                        <p>3136521905 </p>
+                    </div>
+                  </div>
+              </div>
+              <hr>
+              <div class="trayecto">
+                <div class="div-text">Trayecto del viaje completado</div> 
+                <div class="progress">
+                  <br><br><br>
+                  <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%"></div>
+                </div>
+              </div>
+              <hr>
+              <div class="buttons">
+                <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#alerta">Mandar una Alerta</button>
+                <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#terminado">Terminar Viaje</button>
+              </div>
+              <hr>
+        </div>
+    </div>
+
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.3835352593906!2d-75.57944105033802!3d6.213043028397776!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e4429d458b9e19b%3A0xa41de7af3f199040!2sPolit%C3%A9cnico%20Colombiano%20Jaime%20Isaza%20Cadavid%20Sede%20Medell%C3%ADn!5e0!3m2!1ses!2sco!4v1631491256044!5m2!1ses!2sco" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" class="map"></iframe>
+
+    <div class="modal fade" tabindex="-1" id="alerta">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">Alerta Enviada</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <p>Hemos enviado una alerta a tus contactos de emergencia, pronto recibirás ayuda</p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Salir</button>
+            </div>
+          </div>
+        </div>
+    </div>
+      
+    <div class="modal fade" tabindex="-1" id="terminado">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">Viaje Terminado</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <p>Tú viaje ha terminado de manera exitosa</p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-success" data-bs-dismiss="modal">Salir</button>
+            </div>
+          </div>
+        </div>
+    </div>
+  
+    <!-- Bootstrap JavaScript Libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    </script>
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.6.0.js"></script>
+    <script src="/JS/viaje.js"></script>
+  </body>
+</html>
