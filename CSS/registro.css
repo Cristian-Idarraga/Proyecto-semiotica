@@ -14,12 +14,9 @@ body {
     color: #ffffff;
 }
 
-.logo_l {
+.header__img {
+    width: 200px;
     margin-left: 30px;
-    font-family: 'Courier New', Courier, monospace;
-    letter-spacing: 3px;
-    font-size: 25px;
-    font-weight: 600;
 }
 
 .register {
