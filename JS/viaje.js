@@ -6,15 +6,16 @@ $(document).ready(function () {
         var dia = new Date().getDate();
         var mes = new Date().getMonth();
         var año = new Date().getFullYear();
-        var contacto1;
-        var contacto2;
-        var contacto3;
-        var placa = "345FG";
-        var conductor;
-        var km = getRandomInt(0,100) + "km";
-        var numero1;
-        var numero2;
-        var numero3;
+        var contacto1 = '<p>' + array[2].substring(3,array[2].length).replace(/[+]/g," ") + '</p>';
+        var contacto2 = '<p>' + array[4].substring(3,array[4].length).replace(/[+]/g," ") + '</p>'; 
+        var contacto3 = '<p>' + array[6].substring(3,array[6].length).replace(/[+]/g," ") + '</p>'; 
+        var placa = '<p>' + array[1].substring(12,array[1].length) + '</p>';
+        var conductor = '<p>' + array[0].substring(7,array[0].length).replace(/[+]/g, " ") + '</p>'; 
+
+        var km = '<p>' + getRandomInt(0,100) + "km" + '</p>';
+        var numero1 = '<p>' + array[3].substring(3, array[2].length)+ '</p>'; 
+        var numero2 = '<p>' + array[5].substring(3,array[5].length)+ '</p>'; 
+        var numero3 = '<p>' + array[7].substring(3,array[5].length)+ '</p>'; 
 
         $(".placa").append(placa);
         $(".driver").append(conductor);

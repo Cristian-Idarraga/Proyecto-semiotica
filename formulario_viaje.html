@@ -24,7 +24,7 @@
         <nav>
             <ul>
                 <li>
-                    <a href="/index.html">Home</a>
+                    <a href="/index.html">Inicio</a>
                 </li>
                 <li>
                     <a href="/acerca-de.html">Nosotros</a>
@@ -48,7 +48,7 @@
             <h3 class="display-5 text-center" style="color: #22577A;">Agendar un viaje</h3>
             <div class="col">
 
-                <form>
+                <form action="/viaje.html" method="GET"> 
                     <div class="mb-3">
                         <label for="nombre" class="form-label">Nombre del conductor</label>
                         <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Nombre"
@@ -81,14 +81,14 @@
                         <input type="number" class="form-control" id="c3" name="c3" placeholder="Telefóno"
                             required="required">
                         <br>
-                        <label>Empresa por la que viaja</label>
+                        <!-- <label>Empresa por la que viaja</label>
                         <select class="form-select" aria-label="Empresa por la que viaja">
                             <option selected>Otro</option>
                             <option value="1">Uber</option>
                             <option value="2">Didi</option>
                             <option value="3">InDriver</option>
                           <option value="4">Taxi</option>
-                          </select>
+                          </select> -->
                     </div>
                     <p class="text-center">
                     <button type="submit" name="enviar" class="btn btn-primary">Enviar</button>
