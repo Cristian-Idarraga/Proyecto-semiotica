@@ -14,9 +14,12 @@ body {
     align-items: center;
 }
 
-.header__img {
-    width: 200px;
+.logo_l {
     margin-left: 30px;
+    font-family: 'Courier New', Courier, monospace;
+    letter-spacing: 3px;
+    font-size: 25px;
+    font-weight: 600;
 }
 
 .login {
